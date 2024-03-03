@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Cosider Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React web application for managing and printing invoices. It allows users to view a list of invoices fetched from an API, search for specific products within those invoices, and print detailed invoice information. This application utilizes React Data Grid for displaying data and employs html2canvas and jsPDF for converting invoice details into a printable PDF format.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetch and display a list of invoices.
+- Search functionality to filter invoices based on product names.
+- Detailed view of each invoice in a modal.
+- Print functionality to export invoice details as a PDF.
 
-## Expanding the ESLint configuration
+## Usage
+Once the application is running, you can:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Browse through the list of invoices displayed on the main page.
+- Use the search bar to filter invoices by product/item name.
+- Click on any invoice to open a modal with more detailed information.
+- In the detailed view, you can print the invoice by clicking the 'Print' button.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
